@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Création d'un formulaire HTML5</title>
+    <style>
+        textarea {
+            width: 200px;
+            height: 80px;
+            overflow: auto; /* Affiche la barre de défilement automatiquement quand nécessaire */
+            resize: none; /* Empêche le redimensionnement si désiré */
+        }
+        .submit-container {
+            display: flex;
+            gap: 10px; /* Espace entre les boutons */
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="http://www.afpa.fr"></form>
+    <center>
+        <h1>Nous lançons une grane enquêtes sur les anciens stagiaires</h1>
+        <h2>Merci de nous répondre</h2>
+    </center>
+            <input type="text" name="Nom" placeholder="Entrez Nom">
+        <br>
+            <input type="text" name="Prénom" placeholder="Entrez Prénom">
+        <br>
+            <input type="date" name="date-naissance" id="Date">
+        <br>
+        <input type="text" name="Adresse" placeholder="Entrez Adresse">
+        <br>
+            <input type="text" name="Ville" placeholder="Entrez Ville">
+        <br>
+            <input type="number" name="Code postal" placeholder="Code Postal">
+        <br>
+            <input type="email" name="email" placeholder="Entrez E-mail">
+        <br>
+            <input type="radio" name="média" value="Homme" checked="checked">Vous êtes un homme
+            <input type="radio" name="média" value="Femme">Vous êtes une femme
+            <input type="radio" name="média" value="Autre">Autre
+        <br>
+        <label for="Emploie stage">Choisir un emploi : </label>
+        <select name="Emploie stage" id="ES">
+            <option value="Développeur">Développeur</option>
+            <option value="Analyste">Analyste</option>
+            <option value="Chef de projet">Chef de projet</option>
+            <option value="Autre">Autre</option>
+        </select>
+        </label>
+        <br>
+            <input type="text" name="Autre"> Si vous avez répondu autre, précisez
+        <br>
+        <br>
+        <label for="Coûts">A combien était la formation : </label>
+        <select name="Coûts" id="Ct">
+            <option value="&#139;1000&#x20AC;">&#139;1000&#x20AC;</option>
+            <option value="&#155;1000">&#155;1000&#x20AC; et &#139;1500&#x20AC;</option>
+            <option value="&#155;1500">&#155;1500&#x20AC; et &#139;2000&#x20AC;</option>
+            <option value="&#155;2000">&#155;2000&#x20AC;</option>
+        </select>
+        </label>
+        <br>
+            <input type="number" name="Année"> En quelle année avez-vous suivi le stage AFPA
+        <br>
+        <br>
+        <textarea name="Commentaire" id="Com" placeholder="Votre commentaires" 
+        cols="35"
+        rows="5"></textarea>
+
+    <h3>Merci d'avoir répondu au questionnaire</h3>
+            <div class="submit-container">
+    <p><input type="submit" value="Validez" /></p>
+    <p><input type="submit" value="Annulez" /></p>
+            </div>
+        </form>
+    </body>
+</html>
