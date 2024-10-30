@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Création d'un formulaire HTML5</title>
+    <style>
+        textarea {
+            width: 200px;
+            height: 80px;
+            overflow: auto;
+            resize: none;
+        }
+
+        .submit-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        .container-input {
+            line-height: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get" action="http://www.afpa.fr">
+        <h1>Nous lançons une grande enquête sur les anciens stagiaires</h1>
+        <h2>Merci de nous répondre</h2>
+
+        <div class="container-input">
+            <input type="text" id="Nom" name="Nom">
+            <label for="Nom">Votre Nom </label>
+        </div>
+        <div class="container-input">
+            <input type="text" id="Prénom" name="Prénom">
+            <label for="Prénom">Votre Prénom </label>
+        </div>
+        <div class="container-input">
+            <input type="date" id="Date" name="date-naissance">
+            <label for="Date">Votre Date de naissance </label>
+        </div>
+        <div class="container-input">
+            <input type="text" id="Adresse" name="Adresse">
+            <label for="Adresse">votre Adresse </label>
+        </div>
+        <div class="container-input">
+            <input type="text" id="Ville" name="Ville">
+            <label for="Ville">Votre Ville </label>
+        </div>
+        <div class="container-input">
+            <input type="number" id="CodePostal" name="Code postal">
+            <label for="CodePostal">Votre Code Postal </label>
+        </div>
+        <div class="container-input">
+            <input type="email" id="Email" name="email">
+            <label for="Email">Votre Email </label>
+        </div>
+        <div class="container-input">
+            <input type="radio" id="Homme" name="média" value="Homme" checked="checked">
+            <label for="Homme">Homme</label>
+            <input type="radio" id="Femme" name="média" value="Femme">
+            <label for="Femme">Femme</label>
+            <input type="radio" id="Autre" name="média" value="Autre">
+            <label for="Autre">Autre</label>
+        </div>
+        <div class="container-input">
+            <select name="Emploie stage" id="ES">
+                <option value="Développeur">Développeur</option>
+                <option value="Analyste">Analyste</option>
+                <option value="Chef de projet">Chef de projet</option>
+                <option value="Autre">Autre</option>
+            </select>
+        </div>
+        <div class="container-input">
+            <input type="text" id="AutreEmploi" name="Autre">
+            <label for="AutreEmploi">Si vous avez répondu autre, précisez :</label>
+        </div>
+        <div class="container-input">
+            <select name="Coûts" id="Ct">
+                <option value="&lt;1000€">&lt;1000€</option>
+                <option value="1000-1500">1000€ et &lt;1500€</option>
+                <option value="1500-2000">1500€ et &lt;2000€</option>
+                <option value="&gt;2000">&gt;2000€</option>
+            </select>
+        </div>
+        <div class="container-input">
+            <input type="number" id="AnneeStage" name="Année">
+            <label for="AnneeStage">En quelle année avez-vous suivi le stage AFPA :</label>
+        </div>
+        <textarea id="Com" name="Commentaire" placeholder="Vos commentaires" cols="35" rows="5"></textarea>
+        <h3>Merci d'avoir répondu au questionnaire</h3>
+
+        <div class="submit-container">
+            <input type="submit" value="Validez" aria-label="Validez le formulaire" />
+            <input type="reset" value="Annulez" aria-label="Annuler et réinitialiser le formulaire" />
+        </div>
+    </form>
+</body>
+
+</html>
